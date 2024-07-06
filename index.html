@@ -31,6 +31,7 @@
     <section>
         <div class=" grid grid-col-1">
             <!-- card -->
+            <!-- triangle section -->
             <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
                 <figure class="px-5 pt-5">
                     <img src="./images/triangle.png" />
@@ -40,21 +41,44 @@
                     <p>Area (A) = 0.5 x b x h</p>
                     <p id="ans"></p>
                     <div class="flex gap-2">
-                        <input type="text" placeholder="base" class="border border-black rounded-sm pl-2 w-[40%] ">
+                        <input type="text" id="tri-base" placeholder="Base"
+                            class="border border-black rounded-sm pl-2 w-[40%] ">
                         <span>cm</span>
-                        <input type="text" placeholder="height" class="border border-black rounded-sm pl-2 w-[40%]">
+                        <input type="text" id="tri-height" placeholder="Height"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                     </div>
-                    <button class="btn btn-success text-white w-[200px]">Calculate</button>
+                    <button class="btn btn-success text-white w-[200px]" onclick="triangle()">Calculate</button>
                 </div>
             </div>
+
+
+            <!-- card -->
+            <!-- Rectangle section -->
+            <!-- <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+                <figure class="px-5 pt-5">
+                    <img src="./images/triangle.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1>Rectangle</h1>
+                    <p>Area (A) = L x W</p>
+                    <p id="ans"></p>
+                    <div class="flex gap-2">
+                        <input type="text" id="tri-length" placeholder="Length"
+                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                        <span>cm</span>
+                        <input type="text" id="tri-width" placeholder="Width"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-success text-white w-[200px]" onclick="triangle()">Calculate</button>
+                </div>
+            </div> -->
 
         </div>
     </section>
 
-    <script>
-
-    </script>
+    <script src="./triangle.js"></script>
 </body>
 
 </html>
