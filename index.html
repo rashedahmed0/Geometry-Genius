@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <!-- HEADER SECTION -->
+    <div class="bg-teal-100">
+        <div class="navbar  items-center w-[90%] mx-auto">
+            <div class="navbar-start">
+                <div class="">
+                    <a class="btn btn-ghost text-xl">Interactive </a>
+                    <p>Geometry Genius</p>
+
+                </div>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-success">Blog</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GEOMETRY SECTION -->
+    <section>
+        <div class=" grid grid-col-1">
+            <!-- card -->
+            <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+                <figure class="px-5 pt-5">
+                    <img src="./images/triangle.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1>Triangle</h1>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <p id="ans"></p>
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="base" class="border border-black rounded-sm pl-2 w-[40%] ">
+                        <span>cm</span>
+                        <input type="text" placeholder="height" class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-success text-white w-[200px]">Calculate</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
