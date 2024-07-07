@@ -75,11 +75,57 @@
                 </div>
             </div>
 
+            <!-- card -->
+            <!-- Parallelogram section -->
+            <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+                <figure class="px-5 pt-5">
+                    <img src="./images/parallelogram.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1>Parallelogram</h1>
+                    <p>Area (A) = B x H</p>
+                    <p id="Para-ans"></p>
+                    <div class="flex gap-2">
+                        <input type="text" id="Para-base" placeholder="Base"
+                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                        <span>cm</span>
+                        <input type="text" id="Para-height" placeholder="Height"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-success text-white w-[200px]" id="Parallelogram-btn">Calculate</button>
+                </div>
+            </div>
+
+            <!-- card -->
+            <!-- Rhombus section -->
+            <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+                <figure class="px-5 pt-5">
+                    <img src="./images/rhombus.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1>Rhombus</h1>
+                    <p>Area (A) = 0.5 x D1 x D2</p>
+                    <p id="Rhombus-ans"></p>
+                    <div class="flex gap-2">
+                        <input type="text" id="Rhombus-D1" placeholder="D1"
+                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                        <span>cm</span>
+                        <input type="text" id="Rhombus-D2" placeholder="D2"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-success text-white w-[200px]" id="Rhombus-btn">Calculate</button>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <script src="./triangle.js"></script>
     <script src="./rectangle.js"></script>
+    <script src="./parallelogram.js"></script>
+    <script src="./Rhombus.js"></script>
 </body>
 
 </html>
