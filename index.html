@@ -29,7 +29,7 @@
 
     <!-- GEOMETRY SECTION -->
     <section>
-        <div class=" grid grid-col-1">
+        <div class=" grid grid-col-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- card -->
             <!-- triangle section -->
             <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
@@ -55,30 +55,31 @@
 
             <!-- card -->
             <!-- Rectangle section -->
-            <!-- <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+            <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
                 <figure class="px-5 pt-5">
-                    <img src="./images/triangle.png" />
+                    <img src="./images/rectangle.png" />
                 </figure>
                 <div class="card-body items-center text-center">
                     <h1>Rectangle</h1>
                     <p>Area (A) = L x W</p>
-                    <p id="ans"></p>
+                    <p id="rec-ans"></p>
                     <div class="flex gap-2">
-                        <input type="text" id="tri-length" placeholder="Length"
+                        <input type="text" id="rec-length" placeholder="Length"
                             class="border border-black rounded-sm pl-2 w-[40%] ">
                         <span>cm</span>
-                        <input type="text" id="tri-width" placeholder="Width"
+                        <input type="text" id="rec-width" placeholder="Width"
                             class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                     </div>
-                    <button class="btn btn-success text-white w-[200px]" onclick="triangle()">Calculate</button>
+                    <button class="btn btn-success text-white w-[200px]" id="ractangle-btn">Calculate</button>
                 </div>
-            </div> -->
+            </div>
 
         </div>
     </section>
 
     <script src="./triangle.js"></script>
+    <script src="./rectangle.js"></script>
 </body>
 
 </html>
