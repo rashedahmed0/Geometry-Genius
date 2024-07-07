@@ -12,12 +12,11 @@
 <body class="">
     <!-- HEADER SECTION -->
     <div class="bg-teal-100">
-        <div class="navbar  items-center w-[90%] mx-auto">
+        <div class="navbar items-center w-[90%] mx-auto">
             <div class="navbar-start">
                 <div class="">
                     <a class="btn btn-ghost text-xl">Interactive </a>
                     <p>Geometry Genius</p>
-
                 </div>
             </div>
             <div class="navbar-end">
@@ -26,15 +25,13 @@
         </div>
     </div>
 
-
     <!-- GEOMETRY SECTION -->
     <section>
-        <div class=" grid grid-col-1 md:grid-cols-2 lg:grid-cols-3">
-            <!-- card -->
-            <!-- triangle section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Triangle card -->
             <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
                 <figure class="px-5 pt-5">
-                    <img src="./images/triangle.png" />
+                    <img src="./images/triangle.png" alt="Triangle Image" />
                 </figure>
                 <div class="card-body items-center text-center">
                     <h1>Triangle</h1>
@@ -42,7 +39,7 @@
                     <p id="ans"></p>
                     <div class="flex gap-2">
                         <input type="text" id="tri-base" placeholder="Base"
-                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                            class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                         <input type="text" id="tri-height" placeholder="Height"
                             class="border border-black rounded-sm pl-2 w-[40%]">
@@ -52,12 +49,10 @@
                 </div>
             </div>
 
-
-            <!-- card -->
-            <!-- Rectangle section -->
+            <!-- Rectangle card -->
             <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
                 <figure class="px-5 pt-5">
-                    <img src="./images/rectangle.png" />
+                    <img src="./images/rectangle.png" alt="Rectangle Image" />
                 </figure>
                 <div class="card-body items-center text-center">
                     <h1>Rectangle</h1>
@@ -65,21 +60,20 @@
                     <p id="rec-ans"></p>
                     <div class="flex gap-2">
                         <input type="text" id="rec-length" placeholder="Length"
-                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                            class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                         <input type="text" id="rec-width" placeholder="Width"
                             class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                     </div>
-                    <button class="btn btn-success text-white w-[200px]" id="ractangle-btn">Calculate</button>
+                    <button class="btn btn-success text-white w-[200px]" id="rectangle-btn">Calculate</button>
                 </div>
             </div>
 
-            <!-- card -->
-            <!-- Parallelogram section -->
+            <!-- Parallelogram card -->
             <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
                 <figure class="px-5 pt-5">
-                    <img src="./images/parallelogram.png" />
+                    <img src="./images/parallelogram.png" alt="Parallelogram Image" />
                 </figure>
                 <div class="card-body items-center text-center">
                     <h1>Parallelogram</h1>
@@ -87,7 +81,7 @@
                     <p id="Para-ans"></p>
                     <div class="flex gap-2">
                         <input type="text" id="Para-base" placeholder="Base"
-                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                            class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                         <input type="text" id="Para-height" placeholder="Height"
                             class="border border-black rounded-sm pl-2 w-[40%]">
@@ -97,11 +91,10 @@
                 </div>
             </div>
 
-            <!-- card -->
-            <!-- Rhombus section -->
+            <!-- Rhombus card -->
             <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
                 <figure class="px-5 pt-5">
-                    <img src="./images/rhombus.png" />
+                    <img src="./images/rhombus.png" alt="Rhombus Image" />
                 </figure>
                 <div class="card-body items-center text-center">
                     <h1>Rhombus</h1>
@@ -109,7 +102,7 @@
                     <p id="Rhombus-ans"></p>
                     <div class="flex gap-2">
                         <input type="text" id="Rhombus-D1" placeholder="D1"
-                            class="border border-black rounded-sm pl-2 w-[40%] ">
+                            class="border border-black rounded-sm pl-2 w-[40%]">
                         <span>cm</span>
                         <input type="text" id="Rhombus-D2" placeholder="D2"
                             class="border border-black rounded-sm pl-2 w-[40%]">
@@ -119,13 +112,35 @@
                 </div>
             </div>
 
+            <!-- Pentagon card -->
+            <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+                <figure class="px-5 pt-5">
+                    <img src="./images/pentagon.png" alt="Pentagon Image" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1>Pentagon</h1>
+                    <p>Area (A) = 0.5 x P x a</p>
+                    <p id="Pentagon-ans"></p>
+                    <div class="flex gap-2">
+                        <input type="text" id="Pentagon-P" placeholder="Perimeter"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                        <input type="text" id="Pentagon-a" placeholder="Apothem"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-success text-white w-[200px]" id="Pentagon-btn">Calculate</button>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <script src="./triangle.js"></script>
     <script src="./rectangle.js"></script>
     <script src="./parallelogram.js"></script>
-    <script src="./Rhombus.js"></script>
+    <script src="./rhombus.js"></script>
+    <script src="./pentagon.js"></script>
 </body>
 
 </html>

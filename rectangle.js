@@ -1,4 +1,4 @@
-document.getElementById('ractangle-btn').addEventListener('click', function () {
+document.getElementById('rectangle-btn').addEventListener('click', function () {
     const recLength = document.getElementById('rec-length');
     const recWidth = document.getElementById('rec-width');
     const recLengthValue = recLength.value;

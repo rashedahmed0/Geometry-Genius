@@ -6,7 +6,7 @@ document.getElementById('Rhombus-btn').addEventListener('click', function () {
     const numRD1Value = parseFloat(rD1Value);
     const numRD2Value = parseFloat(rD2Value);
 
-    const RhombusAnswer = numRD1Value * numRD2Value;
+    const RhombusAnswer = 0.5 * numRD1Value * numRD2Value;
 
     const RhombusAns = document.getElementById('Rhombus-ans');
 
