@@ -133,9 +133,30 @@
                 </div>
             </div>
 
+            <!-- Ellipse card -->
+            <div class="card bg-base-100 w-[80%] mx-auto shadow-xl m-2">
+                <figure class="px-5 pt-5">
+                    <img src="./images/ellipse.png" alt="Pentagon Image" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h1>Ellipse</h1>
+                    <p>Area (A) = 3.1416 x A x B </p>
+                    <p id="Ellipse-ans"></p>
+                    <div class="flex gap-2">
+                        <input type="text" id="Ellipse-A" placeholder="A"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                        <input type="text" id="Ellipse-B" placeholder="B"
+                            class="border border-black rounded-sm pl-2 w-[40%]">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-success text-white w-[200px]" id="Ellipse-btn">Calculate</button>
+                </div>
+            </div>
+
         </div>
     </section>
-
+    <script src="./Ellipse.js"></script>
     <script src="./triangle.js"></script>
     <script src="./rectangle.js"></script>
     <script src="./parallelogram.js"></script>
